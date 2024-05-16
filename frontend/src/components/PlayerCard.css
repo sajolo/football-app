@@ -1,0 +1,29 @@
+.player-card {
+    background-color: #282828;
+    color: #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    transition: transform 0.2s;
+    flex: 0 0 17%; /* Asegura que las tarjetas no crezcan más de 18% del contenedor */
+    margin: 10px; 
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Organiza el contenido de la tarjeta verticalmente */
+  }
+  
+  .player-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .player-card:hover {
+    transform: scale(1.03);
+  }
+  
+  @media (max-width: 768px) {
+    .player-card {
+      flex: 0 0 100%; /* Asegura que cada tarjeta tome todo el ancho en pantallas pequeñas */
+    }
+  }
+  
